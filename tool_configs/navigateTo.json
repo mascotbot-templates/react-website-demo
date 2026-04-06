@@ -1,0 +1,16 @@
+{
+    "type": "client",
+    "name": "navigateTo",
+    "description": "Navigate to a page. Fire-and-forget — call and keep talking. Pages: /, /estimate, /careers, /franchise",
+    "response_timeout_secs": 1,
+    "disable_interruptions": false,
+    "force_pre_tool_speech": false,
+    "assignments": [],
+    "tool_call_sound_behavior": "auto",
+    "tool_error_handling_mode": "auto",
+    "expects_response": false,
+    "dynamic_variables": {
+        "dynamicVariablePlaceholders": {}
+    },
+    "execution_mode": "immediate"
+}

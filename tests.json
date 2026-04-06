@@ -1,0 +1,22 @@
+{
+    "tests": [
+        {
+            "config": "test_configs/Navigate-to-estimate-on-request.json",
+            "type": "tool",
+            "id": "test_5801knh5ncrqegqtk0qb5x68drrs",
+            "agent_id": "agent_7101kngxhmbjeqbssjej47p7d3yt"
+        },
+        {
+            "config": "test_configs/Fill-fields-when-user-gives-details.json",
+            "type": "tool",
+            "id": "test_0101knh5neemetkaky958be0h0zm",
+            "agent_id": "agent_7101kngxhmbjeqbssjej47p7d3yt"
+        },
+        {
+            "config": "test_configs/Navigate-and-fill-on-first-message.json",
+            "type": "tool",
+            "id": "test_6101knh5nfyheeh9p96mpae0ysev",
+            "agent_id": "agent_7101kngxhmbjeqbssjej47p7d3yt"
+        }
+    ]
+}

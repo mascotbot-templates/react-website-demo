@@ -1,0 +1,28 @@
+{
+    "name": "Navigate and fill on first message",
+    "chat_history": [
+        {
+            "role": "user",
+            "time_in_call_secs": 1,
+            "message": "Hi, I need a moving estimate. I'm John moving from New York to Los Angeles on March 15th."
+        }
+    ],
+    "success_condition": "The agent calls the navigateTo tool with /estimate as the page parameter",
+    "success_examples": [
+        { "response": "On it! What size is your home, and any special items to move?", "type": "success" }
+    ],
+    "failure_examples": [
+        { "response": "Welcome! I'd love to help. Can you tell me your name and where you're moving from?", "type": "failure" }
+    ],
+    "tool_call_parameters": {
+        "parameters": [
+            {
+                "eval": { "type": "exact", "expectedValue": "/estimate" },
+                "path": "page"
+            }
+        ],
+        "referenced_tool": { "id": "tool_3301kngxt6cnej6ab4xy6r7drc0v", "type": "client" },
+        "verify_absence": false
+    },
+    "type": "tool"
+}

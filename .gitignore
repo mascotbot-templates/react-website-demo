@@ -1,0 +1,11 @@
+node_modules/
+.next/
+*.tgz
+*.riv
+.env.local
+.env*.local
+out/
+dist/
+build/
+*.log
+.vercel

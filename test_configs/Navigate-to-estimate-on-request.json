@@ -1,0 +1,28 @@
+{
+    "name": "Navigate to estimate on request",
+    "chat_history": [
+        {
+            "role": "user",
+            "time_in_call_secs": 1,
+            "message": "I need a moving estimate"
+        }
+    ],
+    "success_condition": "The agent calls the navigateTo tool with page parameter set to /estimate",
+    "success_examples": [
+        { "response": "Sure, let me pull up the estimate page for you. Where are you moving from?", "type": "success" }
+    ],
+    "failure_examples": [
+        { "response": "I'd be happy to help you with a moving estimate! Could you tell me more about your move?", "type": "failure" }
+    ],
+    "tool_call_parameters": {
+        "parameters": [
+            {
+                "eval": { "type": "exact", "expectedValue": "/estimate" },
+                "path": "page"
+            }
+        ],
+        "referenced_tool": { "id": "tool_3301kngxt6cnej6ab4xy6r7drc0v", "type": "client" },
+        "verify_absence": false
+    },
+    "type": "tool"
+}

@@ -1,0 +1,10 @@
+{
+    "agents": [
+        {
+            "config": "agent_configs/Website-Demo-Assistant.json",
+            "id": "agent_7101kngxhmbjeqbssjej47p7d3yt",
+            "version_id": "agtvrsn_1701knh64gfhf5pbapx7vj808j76",
+            "branch_id": "agtbrch_7701kngxhpd7fp6bj8z8ech84cjg"
+        }
+    ]
+}

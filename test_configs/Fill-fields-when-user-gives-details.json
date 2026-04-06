@@ -1,0 +1,42 @@
+{
+    "name": "Fill fields when user gives details",
+    "chat_history": [
+        {
+            "role": "user",
+            "time_in_call_secs": 1,
+            "message": "I need an estimate"
+        },
+        {
+            "role": "agent",
+            "time_in_call_secs": 3,
+            "message": "Sure! Let me pull that up. Where are you moving from?"
+        },
+        {
+            "role": "user",
+            "time_in_call_secs": 5,
+            "message": "I'm Sarah Johnson, moving from Boston to Miami next Friday"
+        }
+    ],
+    "success_condition": "The agent calls updateEstimateField tool for the name field with a value containing Sarah",
+    "success_examples": [
+        { "response": "Got it Sarah! What size is your home, and any special items to move?", "type": "success" }
+    ],
+    "failure_examples": [
+        { "response": "Let me confirm - you said Sarah Johnson from Boston to Miami?", "type": "failure" }
+    ],
+    "tool_call_parameters": {
+        "parameters": [
+            {
+                "eval": { "type": "exact", "expectedValue": "name" },
+                "path": "field"
+            },
+            {
+                "eval": { "type": "llm", "description": "Should contain Sarah or Sarah Johnson" },
+                "path": "value"
+            }
+        ],
+        "referenced_tool": { "id": "tool_5201kngxteh8evnrnpw5bjqs4zk8", "type": "client" },
+        "verify_absence": false
+    },
+    "type": "tool"
+}
