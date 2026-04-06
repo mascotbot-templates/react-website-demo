@@ -4,7 +4,7 @@
 
 **[Live Demo](https://react-website-demo-mascotbot.vercel.app)** | [Report Issue](https://github.com/mascotbot-templates/react-website-demo/issues)
 
-![React Website Demo](docs/screenshot.png)
+![React Website Demo](public/screenshot.png)
 
 ## What This Demonstrates
 
