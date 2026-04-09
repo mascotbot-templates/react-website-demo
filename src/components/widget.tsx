@@ -340,7 +340,7 @@ export function PersistentWidget() {
 
         {/* Call button — positioned at bottom-center of widget, pointer-events: auto */}
         <div
-          className="absolute bottom-[15px] left-0 right-[-135px] flex justify-center"
+          className="absolute bottom-[20px] left-0 right-[-135px] flex justify-center"
           style={{ pointerEvents: "none" }}
         >
           <CallButton
