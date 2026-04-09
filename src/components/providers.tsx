@@ -1,18 +1,20 @@
 "use client";
 
-import { MascotProvider } from "@mascotbot-sdk/react";
+import dynamic from "next/dynamic";
 import { DemoProvider } from "@/lib/demo-context";
 import { NavigationHandler } from "@/components/navigation-handler";
-import { PersistentWidget } from "@/components/widget";
+
+const PersistentWidget = dynamic(
+  () => import("@/components/widget").then((m) => ({ default: m.PersistentWidget })),
+  { ssr: false }
+);
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <MascotProvider>
-      <DemoProvider>
-        <NavigationHandler />
-        {children}
-        <PersistentWidget />
-      </DemoProvider>
-    </MascotProvider>
+    <DemoProvider>
+      <NavigationHandler />
+      {children}
+      <PersistentWidget />
+    </DemoProvider>
   );
 }
